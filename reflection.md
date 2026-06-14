@@ -35,8 +35,10 @@ Pytest was not working for copilot, so it added the system path to the test file
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+I ran pytest to check if all the tests passed, and I also played the game to see if the hints were correct and if the game button worked.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  I ran a pytest test that I wrote for the check_guess function. The test included assertions for different inputs, and when I ran it, all the assertions passed, which showed me that the logic in the check_guess function was correct.
 - Did AI help you design or understand any tests? How?
 
 ---

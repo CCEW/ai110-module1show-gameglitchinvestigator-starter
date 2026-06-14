@@ -33,11 +33,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User inputs a number
+2. System checks if the number is correct
+3. System provides feedback (higher/lower)
+4. User continues guessing based on feedback
+5. User eventually guesses the correct number and wins the game or clicks "New Game" to try again.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
