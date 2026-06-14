@@ -18,7 +18,27 @@ def check_guess(guess, secret):
 
     outcome examples: "Win", "Too High", "Too Low"
     """
-    raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+    #FIX: Refactored logic into logic_utils.py using agent mode
+    # Normalize secret to an int when possible so numeric comparisons work
+    try:
+        secret_int = int(secret)
+    except Exception:
+        # If secret can't be converted, fall back to string comparison
+        g_str = str(guess)
+        if g_str == secret:
+            return "Win", "🎉 Correct!"
+        if g_str > secret:
+            return "Too High", "📈 Go LOWER!"
+        return "Too Low", "📉 Go HIGHER!"
+
+    # Numeric comparison when secret is an integer (or stringable to int)
+    if guess == secret_int:
+        return "Win", "🎉 Correct!"
+
+    if guess > secret_int:
+        return "Too High", "📈 Go LOWER!"
+
+    return "Too Low", "📉 Go HIGHER!"
 
 
 def update_score(current_score: int, outcome: str, attempt_number: int):
