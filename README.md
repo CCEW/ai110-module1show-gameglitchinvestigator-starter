@@ -25,9 +25,9 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
@@ -39,14 +39,23 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 4. User continues guessing based on feedback
 5. User eventually guesses the correct number and wins the game or clicks "New Game" to try again.
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+**Screenshot** *(optional)*: 
+![alt text](image.png)
 
 ## 🧪 Test Results
 
 ```
 # Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# pytest tests/                                              
+================================================================= test session starts =================================================================
+platform win32 -- Python 3.11.5, pytest-9.1.0, pluggy-1.6.0
+rootdir: C:\Users\CAMILA\vscodeProjects\codepath\wk1\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 4 items                                                                                                                                      
+
+tests\test_game_logic.py ....                                                                                                                    [100%]
+
+================================================================== 4 passed in 0.03s ================================================================== 
 ```
 
 ## 🚀 Stretch Features
