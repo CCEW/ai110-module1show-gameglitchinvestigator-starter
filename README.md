@@ -45,19 +45,8 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/                                              
-================================================================= test session starts =================================================================
-platform win32 -- Python 3.11.5, pytest-9.1.0, pluggy-1.6.0
-rootdir: C:\Users\CAMILA\vscodeProjects\codepath\wk1\ai110-module1show-gameglitchinvestigator-starter
-plugins: anyio-4.13.0
-collected 4 items                                                                                                                                      
-
-tests\test_game_logic.py ....                                                                                                                    [100%]
-
-================================================================== 4 passed in 0.03s ================================================================== 
-```
-
-## 🚀 Stretch Features
+pytest -q
+.......                                                                  [100%]
+7 passed in 0.04s
 
 - [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]

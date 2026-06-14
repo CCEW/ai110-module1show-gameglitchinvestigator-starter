@@ -28,9 +28,20 @@
 
 | Edge Case | Prompt Used | AI-Suggested Test | Did It Pass? | Your Reasoning |
 |-----------|-------------|-------------------|--------------|----------------|
-| | | | | |
-| | | | | |
-| | | | | |
+| Negative guess | "Generate pytest cases that cover negative numeric guesses, decimal string guesses, and extremely large numeric guesses for the number guessing game." | `test_negative_guess_is_too_low()` | Yes | Ensures guesses below the valid range still compare correctly and do not crash the game logic. |
+| Decimal input | "Generate pytest cases that cover negative numeric guesses, decimal string guesses, and extremely large numeric guesses for the number guessing game." | `test_decimal_guess_parses_to_int()` | Yes | Verifies decimal input is parsed to an integer and does not reject valid numeric guesses. |
+| Extremely large value | "Generate pytest cases that cover negative numeric guesses, decimal string guesses, and extremely large numeric guesses for the number guessing game." | `test_extremely_large_guess_is_too_high()` | Yes | Ensures very large guesses still compare correctly and return a graceful hint. |
+
+**Prompt used:**
+
+```
+Generate pytest cases that cover negative numeric guesses, decimal string guesses, and extremely large numeric guesses for the number guessing game.
+```
+
+**Why these edge cases were chosen:**
+- Negative numbers test values outside the expected positive range.
+- Decimal strings test the input parser's ability to normalize floats.
+- Extremely large values test that comparisons still work without overflow or unexpected behavior.
 
 ---
 
